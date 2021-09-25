@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>JobPortal</title>
+</head>
+    <body >
+        <nav>
+            <div class="topnav navbar">
+                <h3 class="heading">JobPortal</h3>
+                <!-- <div class="links">
+                    <a class="heading" href="./index.html">Home</a>
+                    <a class="heading" href="./places.html">Jobs</a>
+                    <a class="heading" href="./places.html">About</a>
+                    <a class="heading" href="./contact.html">Contact</a>
+                </div> -->
+                <div id="myTopnav">
+                <a href="./index.html" class="heading">Home</a>
+                <a href="./jobs.html" class="active heading">Jobs</a>
+                <a href="./contact.html" class="heading">Contact</a>
+                <a href="./about.html" class="heading">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+                <div class="icons">
+                    <i class="fab fa-instagram" style="padding-right: 15px;"></i>
+                    <i class="fab fa-linkedin-in" style="padding-right: 15px;"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            
+        </nav>
+        <div style="margin-left: 10%;" class="flex1">
+            <div style="width: 30%; border-style: solid; border-width: 1px; border-color: rgb(180, 180, 180); margin-right: 40px;">
+                <form>
+                    <h2 class="heading flex1"><i style="margin-right: 5px;" class="fas fa-sort-amount-up"></i><span>Filter Jobs</span></h2>
+                    <h4 class="heading">Job Type</h4>
+                    <input name="ft" type="checkbox">
+                    <label class="text_para" for="ft">Full Time</label>  <br>
+                    <input name="pt" type="checkbox"> 
+                    <label class="text_para" for="pt">Part Time</label> <br>
+                    <input name="int" type="checkbox">
+                    <label class="text_para" for="int">Internship</label> <br>
+                    <input name="ft" type="checkbox">
+                    <label class="text_para" for="ft">Research</label> <br>
+                    <br>
+                    <h4 class="heading">Job Title</h4>
+                    <select class="input2" name="job-title" placeholder="Job Title" id="">
+                        <option value="">WebDev</option>
+                        <option value="">AppDev</option>
+                        <option value="">Designer</option>
+                    </select>
+                    <h4 class="heading">Job Location</h4>
+                    <select class="input2" name="job-location" placeholder="Job Location" id="">
+                        <option value="">Delhi</option>
+                        <option value="">Mumbai</option>
+                        <option value="">New York</option>
+                    </select>
+                    <h4 class="heading">Salary</h4>
+                    <input class="input2" type="text" name="salary" placeholder="Enter expected salary" id="">
+                </form>
+            </div>
+            <div style="width: 80%;">
+                <header style="justify-content: center;">
+                    <h6 class="text_para" style="color: grey;; text-align: left;">Found 4 Jobs</h6>
+                    <div style="justify-content: left;" class="flex1">
+                        <img src="../public/Group 28.svg" width="100px" alt="comp">
+                        <div>
+                            <h4 class="heading">Company 1</h4>
+                            <div style="justify-content: space-between;" class="flex3">
+                                <h5 style="margin-right: 30%; margin-left: 30%;" class="text_para">Location</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">About</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Term</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Stipend</h5>
+                                <h5 class="text_para">Type</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="justify-content: left;" class="flex1">
+                        <img src="../public/Group 28.svg" width="100px" alt="comp">
+                        <div>
+                            <h4 class="heading">Company 2</h4>
+                            <div style="justify-content: space-between;" class="flex3">
+                                <h5 style="margin-right: 30%; margin-left: 30%;" class="text_para">Location</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">About</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Term</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Stipend</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Type</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="justify-content: left;" class="flex1">
+                        <img src="../public/Group 28.svg" width="100px" alt="comp">
+                        <div>
+                            <h4 class="heading">Company 3</h4>
+                            <div style="justify-content: space-between;" class="flex3">
+                                <h5 style="margin-right: 30%; margin-left: 30%;" class="text_para">Location</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">About</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Term</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Stipend</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Type</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="justify-content: left;" class="flex1">
+                        <img src="../public/Group 28.svg" width="100px" alt="comp">
+                        <div>
+                            <h4 class="heading">Company 4</h4>
+                            <div style="justify-content: space-between;" class="flex3">
+                                <h5 style="margin-right: 30%; margin-left: 30%;" class="text_para">Location</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">About</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Term</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Stipend</h5>
+                                <h5 style="margin-right: 30%;" class="text_para">Type</h5>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        
+        <!-- <footer>
+            <p style="padding-top: 15px;">Copyright © 2021 <b>JobPortal</b> All rights reserved</p>
+        </footer> -->
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+</body>
+</html>

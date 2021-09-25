@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
     <title>JobPortal</title>
 </head>
-<body>
-    
+    <body >
+        <nav>
+            <div class="topnav navbar">
+                <h3 class="heading">JobPortal</h3>
+                <!-- <div class="links">
+                    <a class="heading" href="./index.html">Home</a>
+                    <a class="heading" href="./places.html">Jobs</a>
+                    <a class="heading" href="./places.html">About</a>
+                    <a class="heading" href="./contact.html">Contact</a>
+                </div> -->
+                <div id="myTopnav">
+                <a href="./index.html" class="active heading">Home</a>
+                <a href="./jobs.html" class="heading">Jobs</a>
+                <a href="./contact.html" class="heading">Contact</a>
+                <a href="./about.html" class="heading">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+                <div class="icons">
+                    <i class="fab fa-instagram" style="padding-right: 15px;"></i>
+                    <i class="fab fa-linkedin-in" style="padding-right: 15px;"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            
+        </nav>
+        <div>
+            <header style="justify-content: center;" class="flex1">
+                <div>
+                    <h2 style="text-align: left; margin-left: 10%;" class="heading1">Find Jobs, Internships and Research opportunities</h2>
+                    <section style="margin-left: 10%;" class="content2 flex2">
+                        <button class="btn1 text_para" style="margin-right: 5px;">Register</button>
+                        <button class="btn2 text_para">Log In</button>
+                    </section>
+                </div>
+                <img src="../public/Group 28.svg" style="margin-right: 10%;" width="40%" alt="">
+            </header>
+        </div>
+        <section style="justify-content: center;" class="content2">
+            <form>
+                <div class="flex2" style="justify-content: center;">
+                    <input class="input1" type="text" placeholder="Job/Internship/Research Title">
+                    <input class="input1" type="text" placeholder="Enter Location">
+                    <button class="btn1 text_para">Search</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p style="padding-top: 15px;">Copyright © 2021 <b>JobPortal</b> All rights reserved</p>
+        </footer>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
 </body>
 </html>
