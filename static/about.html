@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>JobPortal</title>
+</head>
+    <body >
+        <nav>
+            <div class="topnav navbar">
+                <h3 class="heading">JobPortal</h3>
+                <!-- <div class="links">
+                    <a class="heading" href="./index.html">Home</a>
+                    <a class="heading" href="./places.html">Jobs</a>
+                    <a class="heading" href="./places.html">About</a>
+                    <a class="heading" href="./contact.html">Contact</a>
+                </div> -->
+                <div id="myTopnav">
+                <a href="./index.html" class="heading">Home</a>
+                <a href="./jobs.html" class="heading">Jobs</a>
+                <a href="./profile.html" class="heading">Profile</a>
+                <a href="./contact.html" class="heading">Contact</a>
+                <a href="./about.html" class="active heading">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+                <div class="icons">
+                    <i class="fab fa-instagram" style="padding-right: 15px;"></i>
+                    <i class="fab fa-linkedin-in" style="padding-right: 15px;"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            
+        </nav>
+        <div>
+            <header style="justify-content: center;" class="flex1">
+                <div>
+                    <h2 style="text-align: left; margin-left: 10%;" class="heading1">Find the opportunity you've been looking for!</h2>
+                    <section style="margin-left: 10%;" class="content2 flex2">
+                        <p style="text-align: left;" class="text_para">Our platform will provide you various opportunities, enabling you to grab that dream job you've been working for</p>
+                    </section>
+                </div>
+                <img src="../public/Group 30.svg" class="image-dp" style="margin-right: 10%;" width="40%" alt="">
+            </header>
+        </div>
+        <section style="justify-content: center;" class="flex1">
+            <img src="../public/Group 31.svg" class="image-dp" style="margin-left: 0%;" width="40%" alt="">
+            <div>
+                <h2 style="text-align: right; margin-right: 10%;" class="heading1">Find the opportunity you've been looking for!</h2>
+                <section style="margin-right: 10%;" class="content2 flex2">
+                    <p style="text-align: right;" class="text_para">Our platform will provide you various opportunities, enabling you to grab that dream job you've been working for</p>
+                </section>
+            </div>
+        </section>
+        <section class="content">
+            <div class="flex">
+                <div style="margin-right: 20px; margin-bottom: 20px;" class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h4 style="color: white;" class="heading">Create a Portfolio</h4>
+                        <img src="../public/Group 31.svg" alt="Avatar" style="width:200px;height:200px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1 style="color: white;" class="heading">Apply for your dream jobs</h1> 
+                        <p class="text_para">Easily apply for your desired positions</p> 
+                      </div>
+                    </div>
+                  </div>
+                <div style="margin-right: 20px; margin-bottom: 20px;" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h4 style="color: white;" class="heading">Search for a position</h4>
+                      <img src="../public/Group 28.svg" alt="Avatar" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                    <h1 style="color: white;" class="heading">Searching has never been easier</h1> 
+                      <p class="text_para">Easily search for your desired positions</p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h4 style="color: white;" class="heading">Apply if you like the position</h4>
+                        <img src="../public/Group 30.svg" alt="Avatar" style="width:200px;height:160px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1 style="color: white;" class="heading">Apply for your dream jobs</h1> 
+                        <p class="text_para">Easily apply for your desired positions</p> 
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <footer>
+            <p style="padding-top: 15px;">Copyright © 2021 <b>JobPortal</b> All rights reserved</p>
+        </footer>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+</body>
+</html>
