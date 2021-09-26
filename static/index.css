@@ -20,9 +20,19 @@
     padding: 1% 5% 1% 5%;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn2 {
+    font-weight: bold;
     border-color: rgb(133, 135, 255);
     border-width: 1px;
     background-color: white;
@@ -297,7 +307,7 @@ header{
 /* responsive font sizes */
 @media (max-width: 1900px) and (min-width: 1400px) {
     .heading1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .text_para {
         font-size: 20px;
@@ -309,7 +319,7 @@ header{
 
 @media (max-width: 1399px) and (min-width: 720px) {
     .heading1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .text_para {
         font-size: 16px;
@@ -321,7 +331,7 @@ header{
 
 @media (max-width: 719px) and (min-width: 400px) {
     .heading1 {
-        font-size: 3rem;
+        font-size: 1rem;
     }
     .text_para {
         font-size: 14px;

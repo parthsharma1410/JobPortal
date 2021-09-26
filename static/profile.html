@@ -28,7 +28,7 @@
                 <a href="./index.html" class="heading">Home</a>
                 <a href="./jobs.html" class="heading">Jobs</a>
                 <a href="./profile.html" class="active heading">Profile</a>
-                <a href="./contact.html" class="aheading">Contact</a>
+                <a href="./contact.html" class="heading">Contact</a>
                 <a href="./about.html" class="heading">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
@@ -87,37 +87,35 @@
                             <input class="input1" type="text" placeholder="Enter your address">
                             <input class="input1" type="text" placeholder="Enter your phone" name="" id="">
                         </div> <br>
-                        <h2 class="heading">Education</h2>
-                        <div class="flex2 content">
-                            <input class="input1" type="text" placeholder="Where did you attend class 10?">
-                            <input class="input1" type="text" placeholder="Enter your score for class 10" name="" id="">
-                        </div> <br>
-                        <div class="flex2 content">
-                            <input class="input1" type="text" placeholder="Where did you attend class 12?">
-                            <input class="input1" type="text" placeholder="Enter your score for class12" name="" id="">
-                        </div> <br>
-                        <div class="flex2 content">
-                            <input class="input1" type="text" placeholder="Where did you go for UG?">
-                            <input class="input1" type="text" placeholder="Enter your score in the UG degree" name="" id="">
-                        </div> <br>
-                        <div class="flex2 content">
-                            <input class="input1" type="text" placeholder="Where did you go for PG?">
-                            <input class="input1" type="text" placeholder="Enter your score for PG" name="" id="">
-                        </div> <br>
-                        <h2 class="heading">Experience</h2>
-                        <div class="flex2 content">
-                            <input class="input1" type="text" placeholder="Enter company name">
-                            <input class="input1" type="text" placeholder="Enter position">                        
+                        <h2 class="text_para">Gender</h2>
+                        <div class="content">
+                            <input style="margin-top: 10px;" type="radio" name="gender" id="male">
+                            <label class="text_para" for="male" style="margin-right: 5px;">Male</label>
+                            <i class="fas fa-mars text_para" style="margin-right: 5px;"></i>
+                            <input style="margin-top: 10px;" type="radio" name="gender" id="female">
+                            <label class="text_para" for="female" style="margin-right: 5px;">Female</label>
+                            <i style="margin-right: 5px;" class="fas fa-venus text_para"></i>
+                            <input style="margin-top: 10px;" type="radio" name="gender" id="other">
+                            <label class="text_para" for="other" style="margin-right: 5px;">Other</label>
+                            <i class="fas fa-neuter text_para"></i>
                         </div>
-                        <input class="input1" type="text" placeholder="Enter duration" name="" id=""> <br> <br>
-                        <div class="flex2 content">
-                            <input class="input1" type="text" placeholder="Enter company name">
-                            <input class="input1" type="text" placeholder="Enter position">                        
-                        </div>
-                        <input class="input1" type="text" placeholder="Enter duration" name="" id=""> <br>
+                        <h2 class="heading">Education</h2> <input type="button" class="btn1" value="Add Education" onclick="createNewEducation();"/> <br> <br>
+                        <div id="education">
+                            <input class='input1' type='text' placeholder='Institution'> <br>
+                            <input class='input1' type='text' placeholder='Subject'> <br> 
+                            <input class='input1' type='text' placeholder='Score'> <br>
+                        </div> <br>
+                        <div id="newElementId"></div> <br>
+                        <h2 class="heading">Experience</h2> <input type="button" class="btn1" value="Add Experience" onclick="createNewExperience();"/> <br> <br>
+                        <div id="experience">
+                            <input class='input1' type='text' placeholder='Company Name'> <br>
+                            <input class='input1' type='text' placeholder='Position'> <br> 
+                            <input class='input1' type='text' placeholder='Duration'> <br>
+                        </div> <br>
+                        <div id="newElementId2"></div> <br>
                         <h2 class="heading">Professional Summary</h2>
                         <textarea class="input1" style="width: 66%;" name="message" id="" cols="50" rows="10" placeholder="Enter a short description about yourself and your background"></textarea> <br>
-                        <button class="btn1 text_para">Submit</button>
+                        <button style="font-weight: bold;" class="btn1 text_para">Submit</button>
                     </div>
                 </form>
             </section>
@@ -135,6 +133,29 @@
                 x.className = "topnav";
               }
             }
+
+            function createNewEducation() {
+                // First create a DIV element.
+                var txtNewInputBox = document.createElement('div');
+
+                // Then add the content (a new input box) of the element.
+                txtNewInputBox.innerHTML = "<input class='input1' type='text' placeholder='Institution'> <br> <input class='input1' type='text' placeholder='Subject'> <br> <input class='input1' type='text' placeholder='Score'> <br> <br>";
+
+                // Finally put it where it is supposed to appear.
+                document.getElementById("newElementId").appendChild(txtNewInputBox);
+            }
+
+            function createNewExperience() {
+                // First create a DIV element.
+                var txtNewInputBox2 = document.createElement('div');
+
+                // Then add the content (a new input box) of the element.
+                txtNewInputBox2.innerHTML = "<input class='input1' type='text' placeholder='Company Name'> <br> <input class='input1' type='text' placeholder='Position'> <br> <input class='input1' type='text' placeholder='Duration'> <br> <br>";
+
+                // Finally put it where it is supposed to appear.
+                document.getElementById("newElementId2").appendChild(txtNewInputBox2);
+            }
+           
             </script>
 </body>
 </html>
