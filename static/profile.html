@@ -13,12 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
     <script src="./index.js"></script>
-    <title>JobPortal</title>
+    <title>VHire</title>
 </head>
     <body >
         <nav>
             <div class="topnav navbar">
-                <h3 class="heading">JobPortal</h3>
+                <img src="../public/Group 32.svg" alt="VHire" width="100px" style="margin-top: 5px;" class="text_para">
                 <!-- <div class="links">
                     <a class="heading" href="./index.html">Home</a>
                     <a class="heading" href="./places.html">Jobs</a>
@@ -29,6 +29,7 @@
                 <a href="./index.html" class="heading">Home</a>
                 <a href="./jobs.html" class="heading">Jobs</a>
                 <a href="./profile.html" class="active heading">Profile</a>
+                <a href="./workshops.html" class="heading">Workshops</a>
                 <a href="./contact.html" class="heading">Contact</a>
                 <a href="./about.html" class="heading">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -43,7 +44,7 @@
             </div>
             
         </nav>
-        <div>
+        <div style="margin-top: 5%;">
             <header style="justify-content: center;" class="flex1">
                 <div>
                    <h1 class="heading">Create your Portfolio</h1>
@@ -54,27 +55,6 @@
         </div>
         <div>
             <section class="content flex2">
-                <!-- <div style="margin-right: 20px; margin-bottom: 20px;" class="flex1">
-                    <i style="margin-right: 10px;" class="fas fa-home heading1"></i>
-                    <div>
-                        <h2 class="text_para">Bareilly, Uttar Pradesh</h2>
-                        <p style="color: grey;" class="text_para">164, Civil Lines</p> <br> <br>
-                    </div>
-                </div>
-                <div style="margin-right: 20px; margin-bottom: 20px;" class="flex1">
-                    <i style="margin-right: 10px;" class="fas fa-phone heading1"></i>
-                    <div>
-                        <h2 class="text_para">+91 1234567890</h2>
-                        <p style="color: grey;" class="text_para">Office hours: Mon to Fri 9am to 5pm</p> <br> <br>
-                    </div>
-                </div>
-                <div class="flex1">
-                    <i style="margin-right: 10px;" class="fas fa-envelope heading1"></i>
-                    <div>
-                        <h2 class="text_para">support@jobportal.com</h2>
-                        <p style="color: grey;" class="text_para">Mail your querirs anytime :)</p> <br> <br>
-                    </div>
-                </div> -->
             </section>
             <section style="justify-content: center;" class="content2">
                 <form>
@@ -100,20 +80,26 @@
                             <label class="text_para" for="other" style="margin-right: 5px;">Other</label>
                             <i class="fas fa-neuter text_para"></i>
                         </div>
-                        <h2 class="heading">Education</h2> <input type="button" class="btn1" value="Add Education" onclick="createNewEducation();"/> <br> <br>
-                        <div id="education">
-                            <input class='input1' type='text' placeholder='Institution'> <br>
-                            <input class='input1' type='text' placeholder='Subject'> <br> 
-                            <input class='input1' type='text' placeholder='Score'> <br>
-                        </div> <br>
-                        <div id="newElementId"></div> <br>
-                        <h2 class="heading">Experience</h2> <input type="button" class="btn1" value="Add Experience" onclick="createNewExperience();"/> <br> <br>
-                        <div id="experience">
-                            <input class='input1' type='text' placeholder='Company Name'> <br>
-                            <input class='input1' type='text' placeholder='Position'> <br> 
-                            <input class='input1' type='text' placeholder='Duration'> <br>
-                        </div> <br>
-                        <div id="newElementId2"></div> <br>
+                        <div class="content flex2">
+                            <div style="width: 50%;">
+                                <h2 class="heading">Education</h2> <input type="button" class="btn1" value="Add Education" onclick="createNewEducation();"/> <br> <br>
+                                <div id="education">
+                                    <input class='input1' type='text' placeholder='Institution'> <br>
+                                    <input class='input1' type='text' placeholder='Subject'> <br> 
+                                    <input class='input1' type='text' placeholder='Score'> <br>
+                                </div> <br>
+                                <div id="newElementId"></div> <br>
+                            </div>
+                            <div style="width: 50%;">
+                                <h2 class="heading">Experience</h2> <input type="button" class="btn1" value="Add Experience" onclick="createNewExperience();"/> <br> <br>
+                                <div id="experience">
+                                    <input class='input1' type='text' placeholder='Company Name'> <br>
+                                    <input class='input1' type='text' placeholder='Position'> <br> 
+                                    <input class='input1' type='text' placeholder='Duration'> <br>
+                                </div> <br>
+                                <div id="newElementId2"></div> <br>
+                            </div>
+                        </div>
                         <h2 class="heading">Professional Summary</h2>
                         <textarea class="input1" style="width: 66%;" name="message" id="" cols="50" rows="10" placeholder="Enter a short description about yourself and your background"></textarea> <br>
                         <button style="font-weight: bold;" class="btn1 text_para">Submit</button>
@@ -122,7 +108,7 @@
             </section>
         </div>
         <footer>
-            <p style="padding-top: 15px;">Copyright © 2021 <b>JobPortal</b> All rights reserved</p>
+            <p style="padding-top: 15px;">Copyright © 2021 <b>VHire</b> All rights reserved</p>
         </footer>
 
 </body>
